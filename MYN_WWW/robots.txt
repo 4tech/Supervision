@@ -1,0 +1,31 @@
+User-agent: *
+Disallow: /admin
+Disallow: /include
+Disallow: /config
+Disallow: /imgs
+Disallow: /stats
+Disallow: /scripts
+Allow: /
+## robots.txt by reflets.info ^^ 
+User-agent: AmesysBot
+Allow: /?s=amesys
+User-agent: BlueCoatBot
+Allow: /?s=bluecoat
+User-agent: DCRIBot
+Allow: /dev/null
+User-agent: HadopiBot
+Allow: http://thepiratebay.se/*
+User-agent: TMGBot
+Allow: /dtc
+Sitemap: http://reflets.info/robots.txt
+##  Fin de la blagounette :)
+User-agent: Googlebo
+Allow: http://seeks.fr
+##  Nom des robots des moteurs de recherche :
+# Alta Vista	Scooter
+# Excite	ArchitextSpider
+# Google	Googlebot
+# HotBot	Slurp
+# InfoSeek	InfoSeek Sidewinder
+# Lycos		T-Rex
+# Voilà		Echo

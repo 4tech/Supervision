@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /admin
+Disallow: /include
+Disallow: /error
+Disallow: /imgs
+
+User-agent: AmesysBot
+Allow: /?s=amesys
+
+User-agent: BlueCoatBot
+Allow: /?s=bluecoat
+
+User-agent: DCRIBot
+Allow: /dev/null
+
+User-agent: HadopiBot
+Allow: http://thepiratebay.se/*
+
+User-agent: TMGBot
+Allow: /dtc
+
+Sitemap: http://reflets.info/sitemap.xml.gz
+

@@ -1,0 +1,60 @@
+php_value include_path "/var/www/MYN/include:/var/www/MYN/stats"
+AddDefaultCharset UTF-8
+
+## Protection contre l'exploration des répertoires web
+Options All -Indexes
+
+## Protection contre le hotlinking
+RewriteEngine on
+#RewriteCond %{HTTP_REFERER} !^http://(www.)?tdey.org/.*$ [NC]
+RewriteCond %{HTTP_REFERER} !^http://myn.tdey.org/.*$ [NC]
+#RewriteCond %{HTTP_REFERER} ^http://(www.)?site-voleur-qui-hotlink.com/.*$ [NC]
+RewriteCond %{REQUEST_FILENAME} !/images/divers/grille.jpg$ [NC]
+RewriteRule .(gif|jpg|jpeg|png)$ /images/divers/grille.jpg [R,L]
+
+## Bloquer l'acces a certaines IPs
+# Deny from IP_a_bannir
+
+## Forcer le sous-domaine dans l'adresse -> merdoie...
+#RewriteCond %{HTTP_HOST} !^myn\.tdey\.org [NC]
+#RewriteRule ^(.*)$ http://myn.tdey.org/$1 [R,L]
+
+ErrorDocument 100 /error/erreur.php?erreur=100
+ErrorDocument 101 /error/erreur.php?erreur=101
+ErrorDocument 200 /error/erreur.php?erreur=200
+ErrorDocument 201 /error/erreur.php?erreur=201
+ErrorDocument 202 /error/erreur.php?erreur=202
+ErrorDocument 203 /error/erreur.php?erreur=203
+ErrorDocument 204 /error/erreur.php?erreur=204
+ErrorDocument 205 /error/erreur.php?erreur=205
+ErrorDocument 206 /error/erreur.php?erreur=206
+ErrorDocument 300 /error/erreur.php?erreur=300
+ErrorDocument 301 /error/erreur.php?erreur=301
+ErrorDocument 302 /error/erreur.php?erreur=302
+ErrorDocument 303 /error/erreur.php?erreur=303
+ErrorDocument 304 /error/erreur.php?erreur=304
+ErrorDocument 305 /error/erreur.php?erreur=305
+ErrorDocument 306 /error/erreur.php?erreur=306
+ErrorDocument 307 /error/erreur.php?erreur=307
+ErrorDocument 400 /error/erreur.php?erreur=400
+ErrorDocument 401 /error/erreur.php?erreur=401
+ErrorDocument 402 /error/erreur.php?erreur=402
+ErrorDocument 403 /error/erreur.php?erreur=403
+ErrorDocument 404 /error/erreur.php?erreur=404
+ErrorDocument 405 /error/erreur.php?erreur=405
+ErrorDocument 406 /error/erreur.php?erreur=406
+ErrorDocument 407 /error/erreur.php?erreur=407
+ErrorDocument 408 /error/erreur.php?erreur=408
+ErrorDocument 409 /error/erreur.php?erreur=409
+ErrorDocument 410 /error/erreur.php?erreur=410
+ErrorDocument 411 /error/erreur.php?erreur=411
+ErrorDocument 412 /error/erreur.php?erreur=412
+ErrorDocument 413 /error/erreur.php?erreur=413
+ErrorDocument 414 /error/erreur.php?erreur=414
+ErrorDocument 415 /error/erreur.php?erreur=415
+ErrorDocument 500 /error/erreur.php?erreur=500
+ErrorDocument 501 /error/erreur.php?erreur=501
+ErrorDocument 502 /error/erreur.php?erreur=502
+ErrorDocument 503 /error/erreur.php?erreur=503
+ErrorDocument 504 /error/erreur.php?erreur=504
+ErrorDocument 505 /error/erreur.php?erreur=505

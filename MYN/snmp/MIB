@@ -1,0 +1,22 @@
+# -*- coding:Utf-8 -*-
+#
+#	Gestion des mibs et traductions des OID (forcément hein)
+#
+
+import os
+import string
+import glob
+import time
+
+
+def main():
+	
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()
+

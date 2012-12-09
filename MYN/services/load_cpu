@@ -1,0 +1,22 @@
+# -*- coding:Utf-8 -*-
+#
+#	Charge CPU (0, 1 et 5)
+#
+
+import os
+import string
+import glob
+import time
+
+
+def main():
+	
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()
+

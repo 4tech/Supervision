@@ -1,0 +1,22 @@
+# -*- coding:Utf-8 -*-
+#
+#	Récupération et stockage des logs en données brutes avant de les envoyer dans la BDD
+#
+
+import os
+import string
+import glob
+import time
+
+
+def main():
+	
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()
+
